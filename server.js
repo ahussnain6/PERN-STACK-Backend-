@@ -15,7 +15,7 @@ app.use(express.json());
 app.use("/user", userrouter);
 app.use("/customer",custrouter);
 app.get("/", (req, res) => {
-  res.send("Home");
+ return res.status(200).send("Home");
 })
 app.listen(PORT, () => {
   console.log(`PORT is running at ${PORT}`);
