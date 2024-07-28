@@ -1,3 +1,4 @@
+require("dotenv").config();
 const { Sequelize } = require('sequelize');
 const databaseUrl = process.env.psql;
 const sequelize = new Sequelize(databaseUrl, {
